@@ -1,0 +1,41 @@
+@charset "utf-8"; 
+@font-face {
+    font-family: 'YeongdeokSnowCrab';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/YeongdeokSnowCrab.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*::selection{
+    background-color: #0AC6D2;
+    color: #fff;
+}
+*::-moz-selection { 
+    background-color: #0AC6D2;
+    color: #fff;
+}
+
+html, body {
+    font-family: 'BMDOHYEON', 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', '애플 SD 산돌고딕 Neo', 'Dotum', '돋움', sans-serif; 
+    font-size: 15px; 
+    color: #003E53;
+    font-weight: 400;
+    line-height: 1.2; 
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.wrapper { 
+    width: 1600px;
+    margin: 0 auto; 
+}
+#wrap { 
+    width: 100%;  
+    overflow: hidden;
+    position: relative;
+}

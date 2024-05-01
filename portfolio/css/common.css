@@ -1,0 +1,104 @@
+@charset "utf-8"; 
+
+@font-face { 
+    font-family:'Pretendard'; 
+    src:url('../fonts/Pretendard-Regular.woff') format('woff'); 
+    font-weight:400; 
+    font-style:normal; 
+}
+@font-face { 
+    font-family:'Pretendard'; 
+    src:url('../fonts/Pretendard-Regular.woff2') format('woff2'); 
+    font-weight:400; 
+    font-style:normal; 
+}
+@font-face { 
+    font-family:'Pretendard'; 
+    src:url('../fonts/Pretendard-Bold.woff') format('woff'); 
+    font-weight:700; 
+    font-style:normal;
+}
+@font-face { 
+    font-family:'Pretendard'; 
+    src:url('../fonts/Pretendard-Bold.woff2') format('woff2'); 
+    font-weight:700; 
+    font-style:normal; 
+}
+
+*::selection{
+    background-color: #EFE7DA;
+    color: #425863;
+}
+*::-moz-selection { 
+    background-color: #EFE7DA;
+    color: #425863;
+}
+
+html, body {
+    font-family: 'Pretendard', 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', '애플 SD 산돌고딕 Neo', 'Dotum', '돋움', sans-serif; 
+    font-size: 15px; 
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 1.2; 
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.wrapper { 
+    width: 1280px;
+    margin: 0 auto; 
+}
+#wrap { 
+    min-width: 100%;  
+    overflow: hidden;
+}
+
+@media screen and (max-width:1320px){
+    .wrapper { 
+        width: auto;
+        margin: 0 20px; 
+    }
+    #wrap {
+        min-width: auto;
+    }
+}
+@media screen and (max-width:1024px){
+    html, body {
+        font-size: 15px; 
+    }
+}
+@media screen and (max-width:768px){
+    html, body {
+        font-size: 14px; 
+    }
+}
+@media screen and (max-width:500px){
+    html, body {
+        font-size: 13px; 
+    }
+}
+
+.skipnav {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 10000000000;
+    width: 100%;
+}
+.skipnav a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background-color: #55CED6;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+.skipnav a[href="#gnb"] {
+    background-color: #0071CF;
+}
+.skipnav a:focus {
+    top: 100px;
+}

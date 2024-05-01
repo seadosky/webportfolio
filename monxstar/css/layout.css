@@ -1,0 +1,120 @@
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    color: #00031D;
+}
+header .inner {
+    display: flex;
+    justify-content: space-between;
+}
+header .logo {
+    margin: 25px 0 0 40px;
+}
+header .logo a {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    width: 248px;
+    height: 50px;
+    background: url(../images/logo.svg) no-repeat center center / contain;
+}
+header .gnb {
+    margin-left: 10%;
+}
+header .gnb ul {
+    display: flex;
+}
+header .gnb ul li a {
+    display: block;
+    line-height: 100px;
+    width: 190px;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+}
+header .tnb {
+    margin: 37px 40px 0 0;
+}
+header .tnb  ul {
+    display: flex;
+}
+header .tnb  ul li {
+    margin: 0 7px;
+}
+header .tnb  ul li a {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header .tnb ul li.search a {
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8333 2.3335C18.6293 2.3335 23.3333 7.0375 23.3333 12.8335C23.3333 18.6295 18.6293 23.3335 12.8333 23.3335C7.03725 23.3335 2.33325 18.6295 2.33325 12.8335C2.33325 7.0375 7.03725 2.3335 12.8333 2.3335ZM12.8333 21.0002C17.3453 21.0002 20.9999 17.3456 20.9999 12.8335C20.9999 8.32141 17.3453 4.66683 12.8333 4.66683C8.32117 4.66683 4.66659 8.32141 4.66659 12.8335C4.66659 17.3456 8.32117 21.0002 12.8333 21.0002ZM22.7328 21.0831L26.0326 24.3829L24.3827 26.0328L21.0829 22.733L22.7328 21.0831Z' fill='%2300031D'/%3E%3C/svg%3E%0A");
+}
+header .tnb ul li.lang a {
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.9999 25.6668C7.55659 25.6668 2.33325 20.4434 2.33325 14.0002C2.33325 7.55684 7.55659 2.3335 13.9999 2.3335C20.4432 2.3335 25.6666 7.55684 25.6666 14.0002C25.6666 20.4434 20.4432 25.6668 13.9999 25.6668ZM11.3283 22.9455C10.2053 20.5637 9.51679 17.9367 9.36511 15.1668H4.73879C5.20092 18.8727 7.83571 21.904 11.3283 22.9455ZM11.7024 15.1668C11.8779 18.0121 12.6907 20.6848 13.9999 23.0442C15.3092 20.6848 16.122 18.0121 16.2974 15.1668H11.7024ZM23.261 15.1668H18.6347C18.4831 17.9367 17.7946 20.5637 16.6716 22.9455C20.1641 21.904 22.7989 18.8727 23.261 15.1668ZM4.73879 12.8335H9.36511C9.51679 10.0636 10.2053 7.43658 11.3283 5.05482C7.83571 6.09638 5.20092 9.12758 4.73879 12.8335ZM11.7024 12.8335H16.2974C16.122 9.98825 15.3092 7.31545 13.9999 4.95615C12.6907 7.31545 11.8779 9.98825 11.7024 12.8335ZM16.6716 5.05482C17.7946 7.43658 18.4831 10.0636 18.6347 12.8335H23.261C22.7989 9.12758 20.1641 6.09638 16.6716 5.05482Z' fill='%2300031D'/%3E%3C/svg%3E%0A");
+}
+
+footer .f_inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 200px;
+    color:  rgba(0, 62, 83, 0.8);
+}
+footer .f_inner .f_ctn .f_nav ul {
+    display: flex;
+}
+footer .f_inner .f_ctn .f_nav ul li {
+    margin-right: 47px;
+    position: relative;
+}
+footer .f_inner .f_ctn .f_nav ul li::after {
+    position: absolute;
+    right: -25px;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    content: "";
+    background-color: rgba(0, 62, 83, 0.3);
+}
+footer .f_inner .f_ctn .f_nav ul li:last-child::after {
+    display: none;
+}
+footer .f_inner .f_ctn .f_nav ul li a.privacy {
+    color:  rgba(0, 62, 83, 1);
+}
+footer .f_inner .f_ctn .f_info {
+    margin: 20px 0 0 0;
+}
+footer .f_inner .f_ctn .f_info ul {
+    display: flex;
+    line-height: 30px;
+}
+footer .f_inner .f_ctn .f_info ul li {
+    margin-right: 25px;
+}
+footer .f_inner .f_ctn .f_info .copyright {
+    margin-top: 20px;
+    color:  rgba(0, 62, 83, 0.7);
+}
+footer .f_inner .sns ul li {
+    line-height: 30px;
+}
+footer .f_inner .sns ul li a {
+    display: flex;
+    align-items: center;
+}
+footer .f_inner .sns ul li a img {
+    margin: 0 5px 2px 0;
+    width: 16px;
+    height: 16px;
+
+}
